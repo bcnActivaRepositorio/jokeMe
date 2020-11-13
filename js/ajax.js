@@ -20,7 +20,7 @@ function generateJoke() {
             //from where
             url: "http://api.icndb.com/jokes/random",
             //what kind of
-            dataType: "json",
+            //dataType: "json",
             //you can have it also like headers
             headers:{Accept: "application/json"},
             //if thumbs up
