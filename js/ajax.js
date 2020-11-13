@@ -18,15 +18,20 @@ function generateJoke() {
             //method
             type: "GET",
             //from where
-            url: "http://api.icndb.com/jokes/random",
+            url: "https://api.chucknorris.io/jokes/random",
             //what kind of
-            //dataType: "json",
+            dataType: "json",
             //you can have it also like headers
-            headers:{Accept: "application/json"},
+            //headers:{Accept: "application/json"},
             //if thumbs up
             success: function(data) {
                 //get me the joke from the object
-                $('#showMe').html(data.value.joke);
+
+                //for the IT API link
+                //$('#showMe').html(data.value.joke); 
+                
+                //https secure link
+                $('#showMe').html(data.value);//
             },
             //not too good, eh honey
             error: function (req, status, error) {
